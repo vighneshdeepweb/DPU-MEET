@@ -1,11 +1,11 @@
 <img src="https://i.imgur.com/XS79fTC.png" width=200> <img width="100" alt="mozilla-builders" src="https://user-images.githubusercontent.com/1423657/81992335-85346480-9643-11ea-8754-8275e98e06bc.png">
 
 
-# Meething : dWebRTC
+# DPU-MEET: dWebRTC
 
 Meething is a semi-decentralized conference bridge using modern WebRTC, [GunDB](http://gun.eco) and [MediaSoup](https://mediasoup.org/) to produce a hybrid MESH-SFU with strong privacy, zero user data retention and powerful off-grid capabilities.
 
-<img src="https://user-images.githubusercontent.com/1423657/78457103-3260a800-76a8-11ea-8c7a-c909c88ba716.png" width=500>
+
 
 ## Status
 * Working Status, _still dWeb-x-perimental!_
@@ -16,7 +16,6 @@ Meething is a semi-decentralized conference bridge using modern WebRTC, [GunDB](
 <img src="https://user-images.githubusercontent.com/1423657/82707584-a537d980-9c7c-11ea-8253-08f063ac8644.gif" width=600>
 
 
-Ready to try Meething? Join Now!</a>
 
 <br/>
 
@@ -75,9 +74,5 @@ SuperPeers can provide the network with services such as STUN/TURN/RELAY and in 
 
 
 
-#### Credits & Thanks
-* [Meething Team](https://discord.gg/4vTnfry) on Discord for making this happen!
-* [Mozilla Builders](https://builders.mozilla.community/) for supporting our idea!
-* [Mediasoup](https://mediasoup.org) Team for their kickass SFU!
-* [Mark's GUN](https://gun.eco/) and its community!
+
 
