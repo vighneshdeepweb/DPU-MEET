@@ -7,13 +7,6 @@ Meething is a semi-decentralized conference bridge using modern WebRTC, [GunDB](
 
 
 
-## Status
-* Working Status, _still dWeb-x-perimental!_
-* Project Selected by [Mozilla Spring Builders MVP Lab](https://builders.mozilla.community/springlab/index.html) :heart:
-* Contributors and Testers welcome! Join or open an [issue](https://github.com/meething/webrtc-gun/issues) for more!
-
-<a href="https://us.meething.space" target="_blank">
-<img src="https://user-images.githubusercontent.com/1423657/82707584-a537d980-9c7c-11ea-8253-08f063ac8644.gif" width=600>
 
 
 
@@ -23,7 +16,7 @@ Meething is a semi-decentralized conference bridge using modern WebRTC, [GunDB](
 
 ### Installation
 #### Docker
-Try Meething using [docker](https://github.com/meething/meething-docker) containers
+
 #### Manual
 * Install `pm2`
 ```
