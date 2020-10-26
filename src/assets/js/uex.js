@@ -309,7 +309,7 @@ export default class UEX {
         if(pval) await med.storePass(pval);
       } else if (document.querySelector('#password').checked){
         // get password, if empty alert that it is empty
-        alert('Password must be filled in')
+        alert('Password is mandatory!!!')
         return;
       }
       // otherwise ignore

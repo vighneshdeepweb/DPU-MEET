@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: 'Meething',
+    name: 'DPU-MEET',
     script: 'src/app.js',
     watch: './src',
     env : {

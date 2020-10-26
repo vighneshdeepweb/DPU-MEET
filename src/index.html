@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Meething</title>
+  <title>DPU-MEET</title>
 
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="shortcut icon" href="https://cdn.glitch.com/f8a2490d-9ef5-4a19-92c4-1bcb76996f85%2Ffavicon%20(1).ico"
+  <link rel="shortcut icon" href="https://i.ibb.co/NLx2LQL/1.png"
     type="image/x-icon" />
-  <link rel="icon" href="https://cdn.glitch.com/f8a2490d-9ef5-4a19-92c4-1bcb76996f85%2Ffavicon%20(1).ico"
+  <link rel="icon" href="https://i.ibb.co/NLx2LQL/1.png"
     type="image/x-icon" />
 
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -58,12 +59,15 @@
 
 </head>
 
+
 <body>
+  
+
   <div id="demo" class="demo" hidden>
     ​ <div class="grid-box" class="grid-box">
       <div id="emptyroom" style="width: 50%; margin: 0 auto;" class="grid-bottom">
         <center class="waiting">
-          <span class="fa fa-cat fa-3x"></span><br><span class="loading mt-4">Waiting for Participants</span>
+          <span class="fas fa-cat fa-6x"></span><br><span class="loading mt-6"><strong>Waiting for Participants</strong> </span>
         </center>
       </div>
       <div class="grid-container" id="grid">
@@ -71,14 +75,16 @@
     </div>
   </div>
   <nav class="navbar fixed-top bg-info rounded-0 d-print-none" id="login">
-    <div class="text-white" style="margin-left:-15px;">
-      <a href="http://github.com/meething" target="_blank">
-        <div class="text-white">&nbsp; <span class="fa fa-bullhorn"></span> meething</div>
+    <a class="navbar-brand" href="https://www.acs.dypvp.edu.in/"><img src="https://i.ibb.co/NLx2LQL/1.png" alt="logo" width="100px" height="40px"></a></img>
+    <div class="text-blue" style="margin-left:-15px;">
+      
+        <div class="text-white"> <span class="fa fa-award"></span> DPU-MEET<strong></strong></div>
       </a>
     </div>
+    
 
     <div class="pull-right room-comm" hidden>
-      <button class="btn btn-md text-white pull-right btn-no-effect fas fa-comment-alt" title="Toggle Chat"
+      <button class="btn btn-md text-white pull-right btn-no-effect fas fa-comment-alt" title="Chat"
         id="toggle-chat-pane">
         <span class="badge badge-danger very-small font-weight-lighter" id="new-chat-notification" hidden>New</span>
       </button>
@@ -92,8 +98,8 @@
       <div id="title-exit" class="floating-3">
         <div id="welcometext">
            <span class="fa fa-cat fa-3x"></span><br>
-          <span style="font-size:larger;font-weight:bolder;">Thank You for using Meething!</span><br>
-          <span style="font-size: 20px;"><a href="javascript:history.back()">Join Again?</a></span>
+          <span style="font-size:larger;font-weight:bolder;">Thank You for using DPU-MEET!!</span><br>
+          <span style="font-size: 15px; color:#1a1a37;"><a href="javascript:history.back()"><strong>Join Again</strong></a></span>
         </div>
        </div>
     </div>
@@ -105,42 +111,42 @@
       <div id="title" class="floating-3">
 
         <div id="welcometext">
-          <span style="font-size:larger;font-weight:bolder;">Welcome to the Meething</span><br>
-          <span style="font-size: 10px;"><a href="https://meething.github.io/meething-webpage/" target="_blank">About
-              Meething</a></span>
+          <span style="font-size:larger;font-weight:bolder;"><strong>Welcome to DPU-MEET</strong></span><br>
+          <span style="font-size: 20px; font-family: Algerian;"><a href="https://dpumeet-about.netlify.app/" target="_blank"><strong>About DPU-MEET</strong>
+             </a></span>
         </div>
 
       </div>
-      <button id="toggle-ok-option" class="btn float-right" style="display:none; background:#673ab7; color:white"> OK </button>
+      <button id="toggle-ok-option" class="btn float-right" style="display:none; background:#ffbc3b ; color:white"> OK </button>
       <div id="selfview" class="selfview">
         <video id="local" autoplay="" muted="" playsinline="" style="pointer-events:none;"></video>
         <div id="controlsAudio">
-          <button class="btn fa fa-arrow-circle-left ligthBg" id="prevAudio"></button>
+          <button class="btn fas fa-arrow-left ligthBg" id="prevAudio"></button>
           <span id="currentAudioDevice" style="overflow-x: hidden;white-space: nowrap;"> No Audio Device selected
           </span>
-          <button class="btn fa fa-arrow-circle-right ligthBg" id="nextAudio"></button>
+          <button class="btn fas fa-arrow-right ligthBg" id="nextAudio"></button>
         </div>
 
         <div id="controlsVideo">
-          <button class="btn fa fa-arrow-circle-left ligthBg" id="prevCam"></button>
+          <button class="btn fas fa-arrow-left ligthBg" id="prevCam"></button>
           <span id="currentVideoDevice" style="overflow-x: hidden;white-space: nowrap;"> No Camera selected </span>
-          <button class="btn fa fa-arrow-circle-right ligthBg" id="nextCam"></button>
+          <button class="btn fas fa-arrow-right ligthBg" id="nextCam"></button>
         </div>
       </div>
       <div id="inputs" class="floating-3 inputs">
-        <button id="randomGo" class="wide btn btn-lg margined" style="background:#673ab7; color:white; box-shadow:1px 1px 3px black; font-weight:bold" title="Jump right in">GO</button>
-        <button id="clear" class="btn btn-lg fas margined" style="background:grey; color:white; box-shadow:1px 1px 3px black; font-weight:bold" title="Reset">Reset</button>
-        <div class="padded"> Name <span style="font-size:smaller;">(Optional)</span></div>
-        <input id="username" placeholder="To Be Or NOT To Be">
-        <div class="padded"> Room Name <span style="font-size:smaller;">(Optional)</span> </div>
-        <input id="roomname" placeholder="Your Kingdom for a...">
-        <div class="padded">Password <span style="font-size:smaller;">(Optional)</span>
+        <button id="randomGo" class="wide btn btn-lg margined" style="background:#aac5b2e8; color:white; box-shadow:1px 1px 3px black; font-weight:bold" title="Jump right in">JOIN</button>
+        <button id="clear" class="btn btn-lg fas margined" style="background:#aac5b2e8; color:white; box-shadow:1px 1px 3px black; font-weight:bold" title="Reset">RESET</button>
+        <div class="padded"><strong>Name</strong> <span style="font-size:smaller;">(Optional)</span></div>
+        <input id="username" placeholder="Username">
+        <div class="padded"><strong>Room Name </strong> <span style="font-size:smaller;">(Optional)</span> </div>
+        <input id="roomname" placeholder="Room Name">
+        <div class="padded"><strong>Password</strong> <span style="font-size:smaller;">(Optional)</span>
           <label id="passwordSwitch" class="switch" title="Turn Password Protection for the room on/off">
             <input id="password" type="checkbox">
             <span class="slider round"></span>
           </label>
         </div>
-        <input id="pass" type="text" placeholder="the secret..." hidden="">
+        <input id="pass" type="password" placeholder="Password" hidden="">
 
         <div id="options-button" class="btn btn-lg btn-secondary fas fa-tools"></div>
 
@@ -148,7 +154,7 @@
     </div>
 
     <div id="options" class="floating-1">
-      <span style="position:relative;left:110px;font-size: 25px;align-self:center;">Options</span><br><br>
+      <span style="position:relative;left:110px;font-size: 25px;align-self:center;"><strong>Options</strong></span><br><br>
       <label class="switch" title="Turn on / off Bacon Mode">
         <input id="bacon" type="checkbox" checked>
         <span class="slider round"></span>
@@ -162,7 +168,9 @@
         <span class="slider round"></span>
       </label> P2P Mesh Only <br><br>
     </div>
-
+    
+    
+        
 
   </div>
   <div class="container-fluid room-comm" hidden>
@@ -186,8 +194,8 @@
 
       <div class="col-md-4 chat-col d-print-none mb-2 bg-info" id="chat-pane">
         <div class="row">
-          <div class="col-12 text-center h5 mb-3" id="chat-title">
-            ChatRoom
+          <div class="col-12 text-center h2 mb-3" style="color:#8458B3;font:50px Arial, sans-serif;"  id="chat-title">
+           ChatRoom
           </div>
         </div>
 
@@ -195,9 +203,9 @@
 
         <div class="row">
           <textarea id="chat-input" class="form-control rounded-0 chat-box border-info" rows="1"
-            placeholder="Type here..."></textarea><br>
+            placeholder="Type here....."></textarea>
           <button id="chat-send" class="form-control btn btn-primary rounded-0 chat-button">
-            <i class="fas fa-paper-plane"></i>
+            <i class="fas fa-paper-plane"> Press Enter or Click to Send</i>
           </button>
         </div>
       </div>
@@ -206,7 +214,7 @@
   <div id="top-menu" style="display:none">
 
     <button class="btn btn-md rounded-0 btn-no-effect fa fa-desktop text-white" id="toggle-screen"
-      title="Toggle Screensharing">
+      title=" Screensharing">
       <span>Share Screen</span>
     </button>
     <!--
@@ -221,7 +229,7 @@
     </button> -->
 
     <button class="btn btn-md rounded-0 btn-no-effect fa fa-users text-white" id="toggle-users"
-      title="Toggle User List">
+      title=" User List">
       <span>User List</span>
     </button>
 
@@ -233,7 +241,7 @@
     -->
 
     <button class="btn btn-md rounded-0 btn-no-effect fa fa-save text-white" id="record-toggle"
-      title="Toggle Recording">
+      title=" Recording">
       <span>Record</span>
     </button>
 
@@ -250,7 +258,7 @@
       </button>
 
       <button class="btn btn-lg btn-no-effect fa fa-volume-up text-white blue" id="toggle-mute"
-        style="pointer-events:auto" title="press SPACEBAR to Mute/Unmute">
+        style="pointer-events:auto" title="Press SPACEBAR to Mute/Unmute">
       </button>
 
       <button class="btn btn-lg btn-no-effect fab fa-pied-piper-pp text-white blue" id="pip-toggle" title="PiP mode"
@@ -270,7 +278,7 @@
     <ul id="dynamic-list" style="list-style-type:none ;margin-right: 3em;"></ul>
   </div>
 
-  <a href="https://meething.github.io/meething-webpage/feedback.html" target="_blank">
+  <a href="https://forms.gle/Ytr2AcBJoJwNnFQU7" target="_blank">
     <div id="feedback">Send Feedback</div>
   </a>
 

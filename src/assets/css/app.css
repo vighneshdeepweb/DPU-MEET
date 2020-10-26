@@ -1,9 +1,31 @@
 body {
   color: #fff;
-  background-color: #1a1a37;
-  background-image: url(/src/assets/images/banner.jpg);
+  
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #1a1a37),
+    url('https://i.ibb.co/gSZykzk/BANNER-1.jpg');
+   
+  position: center;
   overflow-y: auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 1.2;
+  color: #5c5c77;
+  padding: 20px;
+  overscroll-behavior: contain;
 }
+
+
+
+.hero-section {
+  padding: 250px 0 290px;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 
 /* main div */
 .demo {
@@ -51,7 +73,7 @@ body {
 }
 
 #chat-messages {
-  padding: 15px;
+  padding: 30px;
   top: 0px;
   height: 50vh;
   overflow-x: hidden;
@@ -69,29 +91,34 @@ body {
 }
 
 #chat-input {
-  position: sticky;
+  position: relative;
+  color: #EFC050;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 #chat-send {
-  bottom: 10%;
+  bottom: 7%;
   color: white;
+  position: absolute;
 }
 
 .chat-box {
   bottom: 30px;
   right: 0;
-  position: absolute;
+  position: relative;
   border: 0;
   border-top: 1px groove white;
   border-left: 1px groove white;
-  font-size: small;
+  font-size: 15px;
 }
 
 .chat-box::placeholder {
   font-weight: bold;
-  color: white;
-  font-size: 1em;
-  border-bottom: 1px solid #807297;
+  color: black;
+  font-size: 1.2em;
+  border-bottom: 3px solid #807297;
 }
 
 .chat-box {
@@ -104,10 +131,11 @@ body {
   border-bottom: 2px solid orange;
 }
 
-.chat-box:focus {
-  background: #473761;
-  color: white;
+.chat-box:focus {/*this code helps in chat box pink bg color*/
+  background: none;
+  color: #1a1a37;
 }
+
 
 .chat-row {
   height: 100%;
@@ -122,6 +150,7 @@ body {
   border-top: 1px groove white;
   border-left: 1px groove white;
   font-size: small;
+  background-color: #1a1a37;
 }
 
 .sender-info {
@@ -259,8 +288,13 @@ pointer-events:auto;
 
 /* login styles */
 #login {
-  background: #473761bb !important;
-  box-shadow: 4px 0px 8px #14101bbb;
+  
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); 
+  box-shadow: 6px 1px 16px #040404;
+}
+img {
+  vertical-align: middle;
+  border: 0;
 }
 
 #room-create img {
@@ -362,7 +396,7 @@ meter {
 }
 
 .waiting {
-  margin-top: 40px;
+  margin-top: 300px;
   position:absolute;
   left:-50%;
   right:-50%;
@@ -452,7 +486,7 @@ meter {
 #warning-sign{
   position:absolute;
   right:10px;
-  top:60px;
+  top:80px;
   background:#de0046;
   color:white;
   padding:5px 10px;
@@ -469,7 +503,7 @@ meter {
 
 .menu {
   position: relative;
-  top:60px;
+  top:80px;
   width: 320px;
   margin: auto;
 }
@@ -675,7 +709,7 @@ input:checked + .slider:before {
   z-index: 2;
   border-radius: 6px;
   box-shadow: 3px 3px 20px black;
-  background-color: rgba(52, 40, 53, 1);
+  background-color: #DEE0E4;
   top: -250px;
   transition: top 1.5s;
 }
@@ -692,7 +726,7 @@ input:checked + .slider:before {
   z-index: 12;
   border-radius: 4px;
   box-shadow: 5px 5px 20px black;
-  background-color: rgba(62, 50, 63, 1);
+  background-color: #DEE0E4;
 }
 
 .floating-3 {
@@ -701,7 +735,7 @@ input:checked + .slider:before {
   z-index: 14;
   border-radius: 2px;
   box-shadow: 7px 7px 20px rgba(10,10,10,.4);
-  background-color: rgba(72, 60, 73, 1);
+  background-color: #DEE0E4;
 }
 
 #feedback {
@@ -715,7 +749,7 @@ input:checked + .slider:before {
   border-radius: 5px 5px 0px 0px;
   color:white;
   z-index: 10000;
-  background-color: #673ab7;
+  background-color: #ffbc3b;
 }
 
 /* general styles */
@@ -806,7 +840,7 @@ li {
   }
 
   #chat-send {
-    bottom: 20%;
+    bottom: 60%;
   }
 
   .chat-col.chat-opened {
@@ -829,7 +863,7 @@ li {
   .chat-box {
     bottom: 90px;
     margin-bottom: 0px;
-    background: none;
+    background:none;
   }
 }
 
@@ -856,7 +890,7 @@ li {
   }
 
   .chat-box {
-    bottom: 90px;
+    bottom: 50px;
     margin-bottom: 0px;
   }
 }
@@ -886,6 +920,7 @@ li {
     right: 0px;
     bottom: 0px;
     box-shadow: 7px 7px 20px black;
+    
   }
 
 #feedback {
@@ -951,3 +986,4 @@ li {
     top: 46px;
   }
 }
+
