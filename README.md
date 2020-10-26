@@ -19,7 +19,7 @@ Meething is a semi-decentralized conference bridge using modern WebRTC, [GunDB](
 
 <br/>
 
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/https://github.com/meething/webrtc-gun/gun-meething)
+
 
 ### Installation
 #### Docker
