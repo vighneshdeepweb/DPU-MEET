@@ -41,7 +41,7 @@ pm2 start meething.config.js
 * Choose a Room and User name
 * Share link with other participants
 
-The Meething  application will connect to community Gun nodes for user discovery. All room data/audio/video is p2p.
+The DPU-MEET application will connect to community Gun nodes for user discovery. All room data/audio/video is p2p.
 
 
 #### SuperPeers
